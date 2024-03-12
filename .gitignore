@@ -1,0 +1,5 @@
+/backend/db.sqlite3
+/backend/venv/
+/backend/apps/API/migrations/
+/backend/apps/core/migrations/
+/backend/.idea/
