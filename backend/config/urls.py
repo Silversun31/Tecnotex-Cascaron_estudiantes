@@ -44,7 +44,7 @@ urlpatterns = [
     re_path(r'^swagger/$', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
     re_path(r'^redoc/$', schema_view.with_ui('redoc', cache_timeout=0), name='schema-redoc'),
     path('admin/', admin.site.urls),
-    path('', lambda request: redirect('/admin/')),
+    path('', lambda request: redirect('/swagger/')),
     path('api/', include('apps.API.urls')),
     # path('', include('apps.core.urls')),
 ]
